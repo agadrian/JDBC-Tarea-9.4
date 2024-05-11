@@ -21,6 +21,10 @@ dependencies {
 
     //DCS: Arregla el warning SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
     implementation("org.slf4j:slf4j-nop:2.0.6")
+
+
+    //
+    implementation("org.apache.commons:commons-dbcp2:2.9.0")
 }
 
 tasks.test {
