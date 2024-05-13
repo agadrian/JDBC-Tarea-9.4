@@ -80,7 +80,6 @@ class BookDAOH2(
                             )
                         )
                     }
-
                     books
                 }
             }
@@ -122,7 +121,7 @@ class BookDAOH2(
                 }
             }
         }catch (e: SQLException){
-            console.showMessage("ERROR - Get all rows failed ${e.message}")
+            console.showMessage("ERROR - Get row by id failed ${e.message}")
             null
         }catch (e: SQLTimeoutException){
             console.showMessage("ERROR - Database access error occurred: ${e.message}")
@@ -154,7 +153,7 @@ class BookDAOH2(
             }
 
         }catch (e: SQLException){
-            console.showMessage("ERROR - Get all rows failed ${e.message}")
+            console.showMessage("ERROR - Update rows failed ${e.message}")
             null
         }catch (e: SQLTimeoutException){
             console.showMessage("ERROR - Database access error occurred: ${e.message}")
@@ -184,7 +183,7 @@ class BookDAOH2(
                 }
             }
         }catch (e: SQLException){
-            console.showMessage("ERROR - Get all rows failed ${e.message}")
+            console.showMessage("ERROR - Delete rows failed ${e.message}")
             false
         }catch (e: SQLTimeoutException){
             console.showMessage("ERROR - Database access error occurred: ${e.message}")
@@ -210,7 +209,7 @@ class BookDAOH2(
             }
 
         }catch (e: SQLException){
-            console.showMessage("ERROR - Get all rows failed ${e.message}")
+            console.showMessage("ERROR - Delete all rows failed ${e.message}")
             false
         }catch (e: SQLTimeoutException){
             console.showMessage("ERROR - Database access error occurred: ${e.message}")
